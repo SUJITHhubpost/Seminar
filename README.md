@@ -1,9 +1,9 @@
 # Seminar Report
 
 
-Seminar report template using latex___
-Step 1 : Download and Install MikTex from https://miktex.org/download___
-Step 2 : Install TexMaker (Recomended) Or use TexWorks___
-Step 3 : Create a folder, Download and unzip the files to your folder___
-step 4 : Open main.tex in TexMaker___
+Seminar report template using latex </br>
+Step 1 : Download and Install MikTex from https://miktex.org/download </br>
+Step 2 : Install TexMaker (Recomended) Or use TexWorks </br>
+Step 3 : Create a folder, Download and unzip the files to your folder </br>
+step 4 : Open main.tex in TexMaker </br>
 step 5 : Edit contents, Enjoy
