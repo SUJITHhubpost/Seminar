@@ -1,0 +1,215 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fontspec}
+\setmainfont[
+BoldFont=timesbd.ttf,
+ItalicFont=timesi.ttf,
+BoldItalicFont=timesbi.ttf
+]{times.ttf}
+\usepackage{graphicx}
+\graphicspath{ {figures/} }
+\usepackage{array}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=25.4mm,
+ right=26.4mm,
+ top=25.4mm,
+ bottom=25.4mm
+ }
+ 
+\begin{document}
+\pagenumbering{gobble}
+\begin{center}
+    \textbf{\begin{huge}
+    SEMINAR REPORT ON\\
+    \end{huge}}
+   \vspace{10mm}
+    
+    \begin{Large}\textbf{
+    CONVOLUTIONAL NEURAL NETWORKS FOR  \vspace{3mm}\\COMPUTER VISION}
+    \end{Large}
+    
+    \vspace{7mm}
+    
+    \textbf{\textit{\begin{large}A seminar report submitted in partial fulfillment for the award of the degree of\end{large}}}
+    
+    \vspace{5mm}
+    
+    \begin{Large}\textbf{
+    BACHELOR OF TECHNOLOGY}
+    \end{Large}
+    
+    \vspace{5mm}
+    
+    \begin{Large}\textbf{
+    \textit{IN}}
+    \end{Large}
+    
+    \vspace{7mm}
+    
+    \begin{Large}\textbf{
+    ELECTRONICS \& COMMUNICATION ENGINEERING}
+    \end{Large}
+    \vspace{18mm}
+    
+    \textbf{\textit{\begin{large}Submitted by\end{large}}}
+    
+    \vspace{7mm}
+    
+    \textbf{\begin{huge}
+    SUJITH S
+    \end{huge}\begin{LARGE}
+    (14402113)
+    \end{LARGE}}
+    
+    \vspace{10mm}
+    
+    \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.55\textwidth]{sct.jpg}
+    \end{figure}
+    
+    \vspace{15mm}
+    
+    \begin{large}\textbf{
+    DEPT. OF ELECTRONICS\&COMMUNICATION ENGINEERING\\SREE CHITRA THIRUNAL COLLEGE OF ENGINEERING,\\THIRUVANANTHAPURAM-18\\ \vspace{4mm} SEPTEMBER 2017}
+    \end{large}
+    
+    
+\end{center}
+\newpage
+\pagenumbering{gobble}
+\begin{center}
+\begin{large}
+ \textbf{SREE CHITRA THIRUNAL COLLEGE OF ENGINEERING}
+ \vspace{5mm}
+\end{large}
+\begin{Large}
+
+ \textbf{THIRUVANANTHAPURAM-18}
+\end{Large}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.55\textwidth]{sct.jpg}
+    
+\end{figure}
+\begin{LARGE}
+
+\textbf{CERTIFICATE}\\
+\end{LARGE}
+ \end{center}
+ \par This is to certify that this seminar entitled “\textbf{Convolutional Neural Networks For Computer Vision}" is a bonafide record of the seminar done by  SUJITH S inpartial fulfillment of the requirements for the award of B.Tech degree in Electronics and Communication Engineering of the University of Kerala,   during the  academic year 2017-18\\
+ \\ \\ \\ \textbf{SEMINAR COORDINATORS: \hspace{55mm} SEMINAR GUIDE\\ \vspace{6mm}}
+
+\begin{center}
+\begin{multicols}{3}
+
+    
+\textbf{\small Smt. ASHA S}
+\vspace{2mm}\\Assistant Professor
+
+Department of ECE
+
+SCTCE
+
+\columnbreak %Column break point
+
+\textbf{\small Sri. GEORGE M JOSEPH}
+\vspace{2mm}\\Associate professor
+
+Department of ECE 
+
+SCTCE
+
+
+\columnbreak
+
+\textbf{\small Smt. ASHA S}
+\vspace{2mm}\\Associate professor
+
+Department of ECE
+
+SCTCE
+
+\end{multicols}
+\vspace{20mm}
+
+\textbf{\large HEAD OF DEPARTMENT}
+\vspace{2mm}\\
+\textbf{\small Prof. Dr. Sheeja M K}
+
+Professor
+
+Department of ECE
+
+SCT College of Engineering
+\end{center}
+\newpage
+\pagenumbering{roman}
+.
+\vspace{25mm}
+\begin{center}
+\section*{\fontsize{16}{18}\selectfont Acknowledgement}
+\end{center}
+\vspace{10mm}
+\par  I take this opportunity to express my profound gratitude and deep regards to our seminar coordinators Mr Kumar G S (Asst.Professor of Dept. Of ECE, SCTCE) for his exemplary guidance, monitoring and constant encouragement throughout the course of this seminar. The blessing, help and guidance given by him from time to time shall carry me in a long way in the journey of life in which i am about to embark.\\
+
+\par I also take this opportunity to express a deep sense of gratitude to Prof. Dr. S H Anilkumar (Principal, SCTCE), for his cordial support, valuable information and guidance, which helped us in completing this project through various stages.\\
+
+\par I am really thankful to Dr. Sheeja M K (Head of department, ECE, SCTCE) for her invaluable guidance and assistance, without which the accomplishment of the task would have been impossible.\\
+
+\par I would not forget to remember Mrs. Asha S (Assistant professor, ECE Department, SCTCE), Mrs. Preetha V H (Assistant professor, ECE Department, SCTCE) and Mr. George M Joseph (Associate professor, Department of ECE, SCTCE) for their encouragement and more over for their timely support and guidance till completion of this seminar.\\
+
+\par I am also obliged to staff members of SCTCE for the valuable information provided by them in their respective fields. We are grateful for their co-operation during the period of our assignment.\\
+
+\par Lastly, I thank my parents, brothers, sisters and friends for their constant encouragement without which this assignment would have been impossible.\\
+\vspace{10mm}
+\begin{flushright}
+\textbf{SUJITH S}
+\end{flushright}
+
+\addcontentsline{toc}{section}{Acknowledgement}
+\newpage
+.
+\vspace{50mm}
+\begin{center}
+\section*{\fontsize{16}{18}\selectfont Abstract}
+\end{center}
+\par This seminar report is based on the seminar held during the academic year 2017-18. The report focuses convolutional neural networks and computer vision allowing the reader to understand the underlying concept of CNN and also an introduction to neural networks. After giving a brief introduction to Neural networks, We discuss about some machine learning processes to give a basic understanding of the concept of convolutional neural networks. 
+\vspace{5mm}
+\par The second section focuses entirely on convolutional neural networks and the different layers in it. The third section is about the recent developments in convolutional neural networks in the field of computer vision and object detection and the final session is about the practical side and implementation of convolutional neural network.
+\addcontentsline{toc}{section}{Abstract}
+
+\newpage
+\pagenumbering{gobble}
+\tableofcontents
+\newpage
+\pagenumbering{gobble}
+
+\listoffigures
+\newpage
+
+
+\vspace{25mm}
+\pagenumbering{arabic}
+\section{\fontsize{14}{14}\selectfont Introduction}
+ 
+\section{\fontsize{14}{14}\selectfont Again}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.25\textwidth]{a.png}
+    \caption{Parking}
+    \label{fig:mesh1}
+    As you can see in the figure \ref{fig:mesh1}, the 
+function grows near 0. Also, in the page \pageref{fig:mesh1} 
+\end{figure}
+\Blindtext
+\subsection{ Not again}
+\Blindtext
+
+\end{document}
