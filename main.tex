@@ -128,7 +128,7 @@ BoldItalicFont=timesbi.ttf
 \textbf{CERTIFICATE}\\
 \end{LARGE}
  \end{center}
- \par This is to certify that this seminar entitled “\textbf{Convolutional Neural Networks For Computer Vision}" is a bonafide record of the seminar done by  SUJITH S inpartial fulfillment of the requirements for the award of B.Tech degree in Electronics and Communication Engineering of the University of Kerala,   during the  academic year 2017-18\\
+ \par This is to certify that this seminar entitled “\textbf{Convolutional Neural Networks For Computer Vision}" is a bonafide record of the seminar done by  SUJITH S in partial fulfilment of the requirements for the award of Bachelor of Technology degree in Electronics and Communication Engineering under the University of Kerala,   during the  academic year 2017-18\\
  \\ \\ \\ \textbf{SEMINAR COORDINATORS: \hspace{55mm} SEMINAR GUIDE\\ \vspace{6mm}}
 
 \begin{center}
@@ -155,7 +155,7 @@ SCTCE
 \columnbreak
 
 \textbf{\small Smt. ASHA S}
-\vspace{2mm}\\ Assistant professor
+\vspace{2mm}\\Associate professor
 
 Department of ECE
 
@@ -182,13 +182,13 @@ SCT College of Engineering
 \section*{\fontsize{16}{18}\selectfont Acknowledgement}
 \end{center}
 \vspace{10mm}
-\par  I take this opportunity to express my profound gratitude and deep regards to our seminar coordinators Mr Kumar G S (Asst.Professor of Dept. Of ECE, SCTCE) for his exemplary guidance, monitoring and constant encouragement throughout the course of this seminar. The blessing, help and guidance given by him from time to time shall carry me in a long way in the journey of life in which i am about to embark.\\
+\par  I take this opportunity to express my profound gratitude and deep regards to our seminar coordinators Mrs. Asha S (Asst.Professor of Dept. Of ECE, SCTCE) and Mr. George M Joseph for their exemplary guidance, monitoring and constant encouragement throughout the course of this seminar. The help and guidance given by them from time to time shall carry me in a long way in the journey of life in which i am about to embark.\\
 
 \par I also take this opportunity to express a deep sense of gratitude to Prof. Dr. S H Anilkumar (Principal, SCTCE), for his cordial support, valuable information and guidance, which helped us in completing this project through various stages.\\
 
 \par I am really thankful to Dr. Sheeja M K (Head of department, ECE, SCTCE) for her invaluable guidance and assistance, without which the accomplishment of the task would have been impossible.\\
 
-\par I would not forget to remember Mrs. Asha S (Assistant professor, ECE Department, SCTCE), Mrs. Preetha V H (Assistant professor, ECE Department, SCTCE) and Mr. George M Joseph (Associate professor, Department of ECE, SCTCE) for their encouragement and more over for their timely support and guidance till completion of this seminar.\\
+\par I would not forget to remember Mrs. Preetha V H (Assistant professor, ECE Department, SCTCE) and Mr. Kumar G S (Assistant professor, ECE Department, SCTCE) for their encouragement and more over for their timely support and guidance till completion of this seminar.\\
 
 \par I am also obliged to staff members of SCTCE for the valuable information provided by them in their respective fields. We are grateful for their co-operation during the period of our assignment.\\
 
@@ -224,10 +224,10 @@ SCT College of Engineering
 \vspace{15mm} 
 \pagenumbering{arabic}
 \section{\fontsize{14}{14}\selectfont Introduction}
- \par This report is tho give the readers an introduction to convolutional neural networks and computer vision.  Convolutional neural network is a type of Artificial neural network used specifically for object detection. It can also be used for speech recognition.It Sounds like a combination of biology and math with a little CS, but these networks have been some of the most influential innovations in the field of computer vision. 2012 was the first year that neural nets grew to prominence as Alex Krizhevsky used them to win that year’s ImageNet competition (basically, the annual Olympics of computer vision), dropping the classification error record from 26\% to 15\%, an astounding improvement at the time.Ever since then, a host of companies have been using deep learning at the core of their services. Facebook uses neural nets for their automatic tagging algorithms, Google for their photo search, Amazon for their product recommendations, Pinterest for their home feed personalization, and Instagram for their search infrastructure. Basically, it is one of the growing and most innovative field in deep learning and computer vision. The companies that have lots of data are the ones that have an inherent advantage over the rest of the competition. The more training data that you can give to a network, the more training iterations you can make, the more weight updates you can make, and the better tuned to the network is when it goes to production. Facebook (and Instagram) can use all the photos of the billion users it currently has, Pinterest can use information of the 50 billion pins that are on its site, Google can use search data, and Amazon can use data from the millions of products that are bought every day and this is how big companies use convolutional neural networks. Now for a beginning, this report will give the basics introduction to convolutional neural networks and at the end of this, the readers will be able to implement it.
+ \par This report is to give the readers an introduction to convolutional neural networks and computer vision.  Convolutional neural network is a type of Artificial neural network used specifically for object detection. It can also be used for speech recognition.It Sounds like a combination of biology and math with a little CS, but these networks have been some of the most influential innovations in the field of computer vision. 2012 was the first year that neural nets grew to prominence as Alex Krizhevsky used them to win that year’s ImageNet competition (basically, the annual Olympics of computer vision), dropping the classification error record from 26\% to 15\%, an astounding improvement at the time.Ever since then, a host of companies have been using deep learning at the core of their services. Facebook uses neural nets for their automatic tagging algorithms, Google for their photo search, Amazon for their product recommendations, Pinterest for their home feed personalization, and Instagram for their search infrastructure. Basically, it is one of the growing and most innovative field in deep learning and computer vision. The companies that have lots of data are the ones that have an inherent advantage over the rest of the competition. The more training data that you can give to a network, the more training iterations you can make, the more weight updates you can make, and the better tuned to the network is when it goes to production. Facebook (and Instagram) can use all the photos of the billion users it currently has, Pinterest can use information of the 50 billion pins that are on its site, Google can use search data, and Amazon can use data from the millions of products that are bought every day and this is how big companies use convolutional neural networks. Now for a beginning, this report will give the basics introduction to convolutional neural networks and at the end of this, the readers will be able to implement it.
 \section{\fontsize{14}{14}\selectfont Human brain}
 \par The struggle to understand the brain has been made easier because of the pioneering work of Ramón y Cajál (1911), who introduced the idea of neurons as structural constituents of the brain. Typically, neurons are five to six orders of magnitude slower than silicon logic gates; events in a silicon chip happen in the nanosecond range, whereas neural events happen in the millisecond range. However, the brain makes up for the relatively slow rate of operation of a neuron by having a truly staggering number of neurons (nerve cells) with massive interconnections between them. It is estimated that there are approximately 10 billion neurons in the human cortex, and 60 trillion synapses or connections (Shepherd and Koch, 1990). The net result is that the brain is an enormously efficient structure. Specifically, the energetic efficiency
-of the brain is approximately $10^16$ joules (J) per operation per second, whereas the corresponding value for the best computers is orders of magnitude larger. 
+of the brain is approximately $10^{16}$ joules (J) per operation per second, whereas the corresponding value for the best computers is orders of magnitude larger. 
 
 The brain is a highly complex, nonlinear, and parallel computer
 (information-processing system). It has the capability to organize its structural constituents, known as neurons, so as to perform certain computations (e.g., pattern recognition, perception, and motor control) many times faster than the fastest digital computer in existence today. Consider, for example, human vision, which is an information-processing task. It is the function of the visual system to provide a representation of the environment around us and, more important, to supply the information we need to interact with the environment. To be specific, the brain routinely accomplishes perceptual recognition tasks (e.g., recognizing a familiar face embedded in an unfamiliar scene) in approximately 100–200 ms, whereas tasks of much lesser complexity take a great deal longer on a powerful computer.
@@ -306,7 +306,14 @@ the induced local field $v$. In what follows, we identify two basic types of act
        0,              & \text{if\hspace{2mm} }  \ v < 1
 \end{cases}
 \]
-gbhg bhbyhbh
+In engineering, this form of a threshold function is commonly referred to as a Heaviside
+function.
+
+In neural computation, such a neuron is referred to as the McCulloch–Pitts model, in
+recognition of the pioneering work done by McCulloch and Pitts (1943). In this model,
+the output of a neuron takes on the value of 1 if the induced local field of that neuron
+is nonnegative, and 0 otherwise.This statement describes the all-or-none property of the
+McCulloch–Pitts model
  \begin{figure}[h]
     	\centering
     	\includegraphics[width=0.35 \textwidth]{d.png}
@@ -319,9 +326,7 @@ gbhg bhbyhbh
 -
 Pitts  neurons
 ,  the  simplest  example  being  the 
-perceptron
-.  Continuous  neurons,  freq
-uently  with  sigmoidal activation, are  used  in  the  context  of 
+perceptron. Continuous  neurons,  frequently  with  sigmoidal activation, are  used  in  the  context  of 
 back  propagation
 of error.
         \subsubsection{Recurrent neural networks}
@@ -363,7 +368,7 @@ Tasks that fall within the paradigm of unsupervised learning are in general esti
 	\caption{Convolutional neural network overview}
 	\end{figure} 
 
-    Some of the computer vision problems are yet to be solved and convolutional neural network has been the main point of interest in this field for the last 4-5 years. Last month ( October 2017), Geoffray Hinton who is famous for his works in deep learning at google, Introduced a new concept called Capsule Neural network. The only competition to ConvNet is still too young and under development. This report is to give the readers a good introduction to ConvNet and guide them through each steps to implement CNN. When we look into the hystory of CNN, It started back in the early 1998. But the lack of computational power restricted the researchers in doing more in the field of computer vision. Also the introduction of Deep learning concepts and availability of powerful GPUs and GPUs made people use ConvNets more in the field of computer vision. 
+    Some of the computer vision problems are yet to be solved and convolutional neural network has been the main point of interest in this field for the last 4-5 years. Last month ( October 2017), Geoffray Hinton who is famous for his works in deep learning at google, Introduced a new concept called Capsule Neural network. The only competition to ConvNet is still too young and under development. This report is to give the readers a good introduction to ConvNet and guide them through each steps to implement CNN. When we look into the hystory of CNN, It started back in the early 1998. But the lack of computational power restricted the researchers in doing more in the field of computer vision. Also the introduction of Deep learning concepts and availability of powerful CPUs and GPUs made people use ConvNets more in the field of computer vision. 
 
 \begin{figure}[h]
     	\centering
@@ -372,7 +377,7 @@ Tasks that fall within the paradigm of unsupervised learning are in general esti
 	\caption{ImageNet}
 	\end{figure} 
     
-ImageNet is a data set comprising of some 14 million 22,000 categories of objects. This was one of the biggest datasets made available during early 2010s and ImageNet Challenge is used to identify the best image recognition/Object detection model in the world. Since 2012(SuperVision now AlexNet), all the models that won the ImageNet challenge were all based on convolutional neural networks. Now the error rate has decreased so much that these models shows a better accuracy than human beings (Figure 6 - ResNet in 2015). 
+ImageNet is a data set comprising of some 14 million images under 22,000 categories of objects. This was one of the biggest datasets made available during early 2010s and ImageNet Challenge was introduced just after the development of that dataset and from there on, it was used to identify the best image recognition/Object detection model in the world. Since 2012(SuperVision now AlexNet), all the models that won the ImageNet challenge were all convolutional neural network based models. Now the error rate has decreased so much that these models shows a better accuracy than human beings (Figure 6 - ResNet in 2015). 
 \begin{figure}[h]
     	\centering
     	\includegraphics[width=0.75 \textwidth]{f.png}
@@ -396,7 +401,7 @@ field in the previous layer, thereby forcing it to extract local features. Once 
 has been extracted, its exact location becomes less important, so long as its position relative
 to other features is approximately preserved.
 
-    \quad 2. \textit{Subsampling}: Each computational layer of the network is composed of multiple feature maps, with each feature map being in the form of a plane within which the individual neurons are constrained to share the same set of synaptic weights. This second form of structural constraint has the following beneficial effects:
+    \quad 2. \textit{Feature mapping.}: Each computational layer of the network is composed of multiple feature maps, with each feature map being in the form of a plane within which the individual neurons are constrained to share the same set of synaptic weights. This second form of structural constraint has the following beneficial effects:
     \begin{itemize}
   \item \textit{shift invariance}, forced into the operation of a feature map through the use of \textit{convolution} with a kernel of small size, followed by a sigmoid function;
   \item reduction in the number of free parameters, accomplished through the use of weight sharing.
@@ -413,7 +418,7 @@ to other features is approximately preserved.
 	\caption{Architecture of Convolutional neural network }
 	\end{figure} 
     
-    Figure 7. Shows the basic structure of a convolutional neural network with 10 layers. Here the first one is the input layer which is the input 2D image with color as the 3rd parameter. the image is $224\times224\times3$. Here 3 represents the 3 channels. The images are in color, so they have three channels: red, green and blue. This image has a total $of 224\times224\times3 = 150,528$ features. the second layer is the convolution layer, in which the number of pixels remains the same but the number of features output is $224\times224\times64$. To reduce the amount of features, max pooling layer is applied and the output is $112\times112\times128$ and this continues several times depending on the design of the network. Fully connected layers stretch the data out to a one dimensional data. With the successive computational layers alternating between convolution and subsampling, we get a “bipyramidal” effect. That is, at each convolutional or subsampling layer, the number of feature maps is increased while the spatial resolution is reduced, compared with the corresponding previous layer.The idea of convolution followed by subsampling is inspired by the notion of “simple” cells followed by “complex” cells14, which is the parameter that plays a vital role in the detection of object. Here, 
+    Figure 8. Shows the basic structure of a convolutional neural network with 10 layers. Here the first one is the input layer which is the input 2D image with color as the 3rd parameter. the image is $224\times224\times3$. Here 3 represents the 3 channels. The images are in color, so they have three channels: red, green and blue. This image has a total $of 224\times224\times3 = 150,528$ features. the second layer is the convolution layer, in which the number of pixels remains the same but the number of features output is $224\times224\times64$. To reduce the amount of features, max pooling layer is applied and the output is $112\times112\times128$ and this continues several times depending on the design of the network. Fully connected layers stretch the data out to a one dimensional data. With the successive computational layers alternating between convolution and subsampling, we get a “bipyramidal” effect. That is, at each convolutional or subsampling layer, the number of feature maps is increased while the spatial resolution is reduced, compared with the corresponding previous layer.The idea of convolution followed by subsampling is inspired by the notion of “simple” cells followed by “complex” cells14, which is the parameter that plays a vital role in the detection of object. Here, 
     \begin{small}
     
 \vspace{2mm}INPUT: [224x224x3]        memory:  224*224*3=150K   weights: 0
@@ -468,12 +473,12 @@ FC: [1x1x1000]  memory:  1000 weights: 4096*1000 = 4,096,000
     	\centering
     	\includegraphics[width=0.55 \textwidth]{h.png}
     	\caption{Multi layer perceptron}
-    	\label{fig:mesh7}
+    	\label{fig:mesh9}
     	
 	\end{figure}   
      
      
-     Figure 8 shows the architectural graph of a multiplayer perceptron with three hidden
+     Figure 9 shows the architectural graph of a multiplayer perceptron with three hidden
 layers and an output layer. To set the stage for a description of the multilayer perceptron
 in its general form, the network shown here is fully connected.This means that a neuron
 in any layer of the network is connected to all the neurons (nodes) in the previous
@@ -504,7 +509,7 @@ those we discuss in this report.
 \begin{figure}[h]
     	\centering
     	\includegraphics[width=0.75\textwidth]{cnn2.jpg}
-       	\label{fig:mesh9}
+       	\label{fig:mesh10}
 	\caption{ConvNet}
 	\end{figure} 
 
@@ -514,52 +519,53 @@ those we discuss in this report.
 \begin{figure}[h]
     	\centering
     	\includegraphics[width=0.75\textwidth]{2d.jpg}
-       	\label{fig:mesh10}
+       	\label{fig:mesh11}
 	\caption{Convolution}
 	\end{figure}
 
 		 
-		  During the forward pass, we slide (more precisely, convolve) each filter across the width and height of the input volume and compute dot products between the entries of the filter and the input at any position. As we slide the filter over the width and height of the input volume we will produce a 2-dimensional activation map that gives the responses of that filter at every spatial position. Intuitively, the network will learn filters that activate when they see some type of visual feature such as an edge of some orientation or a blotch of some color on the first layer, or eventually entire honeycomb or wheel-like patterns on higher layers of the network. Now, we will have an entire set of filters in each CONV layer (e.g. 12 filters), and each of them will produce a separate 2-dimensional activation map. We will stack these activation maps along the depth dimension and produce the output volume.
+		  During the forward pass, we slide (more precisely, convolve) each filter across the width and height of the input volume and compute dot products between the entries of the filter and the input at any position. As we slide the filter over the width and height of the input volume we will produce a 2-dimensional activation map that gives the responses of that filter at every spatial position. Intuitively, the network will learn filters that activate when they see some type of visual feature such as an edge of some orientation or a block of some color on the first layer, or eventually entire honeycomb or wheel-like patterns on higher layers of the network. Now, we will have an entire set of filters in each CONV layer (e.g. 12 filters), and each of them will produce a separate 2-dimensional activation map. We will stack these activation maps along the depth dimension and produce the output volume.
 		         
         
         \begin{figure}[h]
     	\centering
     	\includegraphics[width=0.75\textwidth]{convimages.png}
-       	\label{fig:mesh11}
+       	\label{fig:mesh12}
 	\caption{Convolution}
 	\end{figure} 
 	
 	\subsubsection{ReLu layer}
-
-After each conv layer, it is convention to apply a nonlinear layer (or activation layer) immediately afterward.The purpose of this layer is to introduce nonlinearity to a system that basically has just been computing linear operations during the conv layers (just element wise multiplications and summations).In the past, nonlinear functions like tanh and sigmoid were used, but researchers found out that ReLU layers work far better because the network is able to train a lot faster (because of the computational efficiency) without making a significant difference to the accuracy.
-
  \begin{figure}[h]
     	\centering
-    	\includegraphics[width=0.75\textwidth]{act.png}
-       	\label{fig:mesh12}
-	\caption{Pooling}
+    	\includegraphics[width=1\textwidth]{act.png}
+       	\label{fig:mesh13}
+	\caption{ReLu}
 	\end{figure} 
+
+After each conv layer, it is convention to apply a non-linear layer (or activation layer) immediately afterwards.The purpose of this layer is to introduce non-linearity to a system that basically has just been computing linear operations during the conv layers (just element wise multiplications and summations).In the past, non-linear functions like tanh and sigmoid were used, but researchers found out that ReLU layers work far better because the network is able to train a lot faster (because of the computational efficiency) without making a significant difference to the accuracy.
 
  It also helps to alleviate the vanishing gradient problem, which is the issue where the lower layers of the network train very slowly because the gradient decreases exponentially through the layers (Explaining this might be out of the scope of this post, but see here and here for good descriptions). The ReLU layer applies the function $f(x) = max(0, x)$ to all of the values in the input volume. In basic terms, this layer just changes all the negative activations to 0.This layer increases the nonlinear properties of the model and the overall network without affecting the receptive fields of the conv layer.
         
         \subsubsection{Pooling layer}
          After some ReLU layers, programmers may choose to apply a pooling layer. It is also referred to as a downsampling layer. In this category, there are also several layer options, with maxpooling being the most popular. This basically takes a filter (normally of size 2x2) and a stride of the same length. It then applies it to the input volume and outputs the maximum number in every subregion that the filter convolves around.
          
+          Other options for pooling layers are average pooling and L2-norm pooling. The intuitive reasoning behind this layer is that once we know that a specific feature is in the original input volume (there will be a high activation value), its exact location is not as important as its relative location to the other features. As you can imagine, this layer drastically reduces the spatial dimension (the length and the width change but not the depth) of the input volume. This serves two main purposes. The first is that the amount of parameters or weights is reduced by 75\%, thus lessening the computation cost. The second is that it will control overfitting. This term refers to when a model is so tuned to the training examples that it is not able to generalize well for the validation and test sets. A symptom of overfitting is having a model that gets 100\% or 99\% on the training set, but only 50\% on the test data.
+         
           \begin{figure}[h]
     	\centering
     	\includegraphics[width=0.75\textwidth]{popo.jpg}
-       	\label{fig:mesh13}
+       	\label{fig:mesh14}
 	\caption{Pooling}
 	\end{figure} 
          
-         Other options for pooling layers are average pooling and L2-norm pooling. The intuitive reasoning behind this layer is that once we know that a specific feature is in the original input volume (there will be a high activation value), its exact location is not as important as its relative location to the other features. As you can imagine, this layer drastically reduces the spatial dimension (the length and the width change but not the depth) of the input volume. This serves two main purposes. The first is that the amount of parameters or weights is reduced by 75\%, thus lessening the computation cost. The second is that it will control overfitting. This term refers to when a model is so tuned to the training examples that it is not able to generalize well for the validation and test sets. A symptom of overfitting is having a model that gets 100\% or 99\% on the training set, but only 50\% on the test data.
-        
+               
         \begin{figure}[h]
     	\centering
     	\includegraphics[width=0.75\textwidth]{pooling.png}
-       	\label{fig:mesh14}
+       	\label{fig:mesh15}
 	\caption{Pooling results}
 	\end{figure} 
+	
 		
 	
         \subsubsection{Fully connected layer }
@@ -665,7 +671,7 @@ def cnn_model_fn(features, labels, mode):
         \begin{figure}[h]
     	\centering
     	\includegraphics[width=1\textwidth]{ssd.png}
-       	\label{fig:mesh14}
+       	\label{fig:mesh16}
 	\caption{ssd}
 	\end{figure} 
         Single shot Multi box detector is a method for detecting objects in images using a single deep neural network. Our approach, named SSD, discretizes the output space of bounding boxes into a set of default boxes over different aspect ratios and scales per feature map location. At prediction time, the network generates scores for the
@@ -1026,8 +1032,8 @@ The traditional OCR techniques can’t be used for text
 detection in natural scene images because of variability in
 appearances, layout, fonts and styles as also inconsistent
 lighting, occlusions, orientations, and noise and background
-objects. An end-to-end system for text spotting localising
-and recognising text in natural scene images and text
+objects. An end-to-end system for text spotting {localising
+and recognising text in natural scene images {and text
 based image retrieval is proposed in this work . This
 system is based on region proposal mechanism for detection
 and DCNN for recognition. This system is fast and scalable
@@ -1218,9 +1224,9 @@ Hinton formed his intuition that vision systems need such an inbuilt sense of ge
 \vspace{35mm}
 \section*{\fontsize{14}{14}\selectfont Conclusion}
 
-After the seminar, I was able to get a good idea about the recent trends in computer vision and also, I got an opportunity to share the knowledge i acquired during this time with my friends and teachers.
+After the seminar, I was able to get a good idea about the recent trends in computer vision and also, I got an opportunity to share the knowledge with my friends and teachers during the seminar presentation.
 
-Computer vision problems are yet to be solved. this is still a young and bright industry in the world. The amount of visual data in this world is massive and still researchers are trying to meaningfully arrange them and find some innovative technologies to make our lives better. 
+Computer vision problems are yet to be solved. this is still a young and bright industry. The amount of visual data in this world is increasing in a massive rate and still researchers are trying to meaningfully arrange them and find some innovative technologies to make our lives better. 
 
 Convolutional neural networks have been the buzz word for the last 4-5 years and it still has many possible applications in this world. Learning the basics of convolutional neural networks makes it easier for us to concentrate on many areas of Deep learning and also learn the new concepts such as Capsule Neural networks.
 
