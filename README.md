@@ -10,5 +10,12 @@ step 5 : Edit contents, Enjoy </br>
 
 #OR
 
+Download everything from this repo, 
+
 Go to overleaf(https://www.overleaf.com/signup?ref=0f1c2d4f4432)
-This is the link to this work: https://www.sharelatex.com/project/5a202d129ae3fa06d37c1336
+
+Upload every files into a new project
+
+make necessary changes to main. tex
+
+If any doubts, send an email to sujithx11@gmail.com (not my official mail id) 
