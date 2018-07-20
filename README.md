@@ -14,8 +14,10 @@ Download everything from this repo,
 
 Go to overleaf(https://www.overleaf.com/signup?ref=0f1c2d4f4432)
 
-Upload every files into a new project
+Project link : https://www.overleaf.com/read/mqjvcrpfpdfg
 
-make necessary changes to main. tex
+copy to new project
+
+enjoy
 
 If any doubts, send an email to sujithx11@gmail.com (not my official mail id) 
